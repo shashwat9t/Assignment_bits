@@ -63,10 +63,11 @@ public class Test1 extends BaseTest {
 
 	public static String capture(WebDriver driver) throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File Dest = new File("src/screenShots/" + System.currentTimeMillis() + ".png");
+		Long timeStamp = System.currentTimeMillis();
+		File Dest = new File("src/screenShots/" + timeStamp + ".png");
 		String errflpath = Dest.getAbsolutePath();
 		FileHandler.copy(scrFile, Dest);
-		return errflpath;
+		return timeStamp+".png";
 	}
 
 }

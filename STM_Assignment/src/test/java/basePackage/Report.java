@@ -10,7 +10,7 @@ public class Report {
 	static ExtentReports report;
 
 	public static void startExtent() {
-		report = new ExtentReports(System.getProperty("user.dir") + "\\ExtentReportResults.html");
+		report = new ExtentReports(System.getProperty("user.dir") + "\\src\\screenShots\\ExtentReportResults.html");
 
 		test = report.startTest("ExtentDemo");
 		test.assignAuthor("Shashwat Chadha--- 2018HT12016", "Shashank Rasotgi --- 2018HT12248",

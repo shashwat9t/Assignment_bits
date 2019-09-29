@@ -5,7 +5,7 @@
     <classes>
       <class name="basePackage.Test1">
         <methods>
-          <include name="test1" invocation-numbers="0 1 2 3 4"/>
+          <include name="test1" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
